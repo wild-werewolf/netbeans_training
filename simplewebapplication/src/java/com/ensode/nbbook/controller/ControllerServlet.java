@@ -36,7 +36,7 @@ public class ControllerServlet extends HttpServlet {
         surveyData.setFullName(request.getParameter("fullName"));
         surveyData.setProgLangList(request.getParameterValues("progLang"));
         request.setAttribute("surveyData", surveyData);
-        request.getRequestDispatcher("ouput.jsp").forward(request, response);
+        request.getRequestDispatcher("output.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
