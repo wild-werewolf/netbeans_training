@@ -14,7 +14,7 @@
     <body>
         <h1>Добро пожаловать на страницу опроса разработчка</h1>
         <p>Please, indicate which programming languages you are familar with.</p>
-        <form name="form1" action="output.jsp">
+        <form name="form1" action="ControllerServlet" method="post">
             <table border="0">
                 <tbody>
                     <tr>
