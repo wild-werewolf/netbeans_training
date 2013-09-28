@@ -16,6 +16,27 @@
             Для получения доступа к приложению, пожалуйста, введите 
             Ваше имя и пароль.
         </p>
-        <%@include file="WEB-INF/jspf/loginForm.jspf" %>
+        <form method="POST" action="j_security_check">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td align="right">Имя&nbsp;</td>
+                    <td>
+                        <input type="text" name="j_username"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Пароль&nbsp;</td>
+                    <td>
+                        <input type="password" name="j_password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="Войти"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>
